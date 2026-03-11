@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Birthday Card</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+
+<audio id="music" loop>
+<source src="birthdayMusic.mp3" type="audio/mp3">
+</audio>
+
+<div id="desktopMessage">
+Open in your mobile for better experience 📱
+</div>
+
+<div id="mobileSite">
+
+<!-- OPEN CARD -->
+<section id="openSection">
+
+<div class="circleBtn" id="openBtn">
+
+<span>OPEN BIRTHDAY</span>
+<span>CARD 📦</span>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallerySection">
+
+<p class="swipeText">Swipe the images 👉</p>
+
+<div class="swiper mySwiper">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide"><img src="images/1.jpg"></div>
+<div class="swiper-slide"><img src="images/2.jpg"></div>
+<div class="swiper-slide"><img src="images/3.jpg"></div>
+<div class="swiper-slide"><img src="images/4.jpg"></div>
+<div class="swiper-slide"><img src="images/5.jpg"></div>
+<div class="swiper-slide"><img src="images/6.jpg"></div>
+<div class="swiper-slide"><img src="images/7.jpg"></div>
+
+</div>
+</div>
+
+<div id="envelopeContainer">
+
+<div class="envelope" id="envelope">
+
+<div class="envelopeFlap"></div>
+
+<div class="letter">
+
+<p>Swipe Up 💌</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CARD PAGE -->
+<section id="cardPage">
+
+<div class="giftCard">
+
+<h2>Dear GUGU 💖</h2>
+
+<p>
+
+May your day be filled with laughter,  
+your year filled with love,  
+and your life filled with endless happiness.  
+
+You deserve every beautiful moment in this world.  
+
+Happy Birthday 🌸
+
+</p>
+
+<button id="cakeBtn">
+
+🎂 LET'S CUT THE CAKE
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- CAKE PAGE -->
+<section id="cakePage">
+
+<h2>Happy Birthday 🎉</h2>
+
+<div class="cake">
+
+<div class="candle">
+<div class="flame" id="flame"></div>
+</div>
+
+</div>
+
+<p>Say "Happy Birthday" to cut the cake 🎤</p>
+
+</section>
+
+
+<section id="finalMessage"></section>
+
+</div>
+
+
+<!-- Libraries -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
