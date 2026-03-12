@@ -59,9 +59,10 @@ to{box-shadow:0 0 40px #7fb58f}
 
 #gallerySection{
 display:none;
+/* border: 2px solid red; */
 height:100vh;
 overflow:hidden;
-padding-top:40px;
+padding-top:10px;
 background:#2f2360;
 position:relative;
 }
@@ -105,11 +106,12 @@ pointer-events:auto;
 .envelope{
 
 width:180px;
-height:120px;
+height:max-content;
 margin:auto;
 background:#cedaa5;
-position:relative;
+position:absolute;
 border-radius:10px;
+bottom: 10vh;
 
 }
 
@@ -207,16 +209,48 @@ font-size:18px;
 
 .cake{
 
-width:130px;
-height:90px;
-
-background:#ff9ec4;
-
-margin:20px auto;
-
-border-radius:12px;
-
+width:160px;
+height:100px;
+margin:30px auto;
 position:relative;
+
+}
+.cake-part{
+
+position:absolute;
+width:50%;
+height:100%;
+background:#ff9ec4;
+top:0;
+transition:transform 0.8s ease;
+
+}
+.cake-part.left{
+left:0;
+border-radius:12px 0 0 12px;
+}
+
+/* right slice */
+
+.cake-part.right{
+right:0;
+border-radius:0 12px 12px 0;
+}
+
+/* slice animation */
+
+.cake.cut .left{
+transform:translateX(-45px) rotate(-12deg);
+}
+
+.cake.cut .right{
+transform:translateX(45px) rotate(12deg);
+}
+
+.tapText{
+
+margin-top:40px;
+font-size:18px;
 
 }
 
