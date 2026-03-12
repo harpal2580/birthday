@@ -56,9 +56,25 @@ gallery.style.display="block"
 
 new Swiper(".mySwiper",{effect:"cards",grabCursor:true})
 
-},600)
+},200)
 
 }
+
+const cake = document.getElementById("cake")
+
+cake.addEventListener("click",()=>{
+
+cake.classList.add("cut")
+
+confetti({
+particleCount:180,
+spread:120,
+origin:{y:0.6}
+})
+
+setTimeout(showMessage,3000)
+
+})
 
 /* SWIPE UP ENVELOPE */
 
